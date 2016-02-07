@@ -3,6 +3,7 @@
 *crt
 *key
 *shadow*
+cups/subscriptions.conf*
 ld.so.cache
 named.conf.pre*
 pki
