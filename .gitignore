@@ -1,0 +1,8 @@
+*.pem
+*cert
+*crt
+*key
+*shadow*
+named.conf.pre*
+pki
+
