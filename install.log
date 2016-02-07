@@ -1471,3 +1471,4 @@
 1454826703 mod_ssl 2.4.6 40.el7.centos x86_64
 1454826703 phpMyAdmin 4.4.15.2 1.el7 noarch
 1454827434 php 5.4.16 36.el7_1 x86_64
+1454856532 Percona-Server-devel-56 5.6.28 rel76.1.el7 x86_64
