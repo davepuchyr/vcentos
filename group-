@@ -66,3 +66,4 @@ stapdev:x:158:
 admin:x:1000:admin
 vboxsf:x:983:
 dave:x:500:
+mysql:x:499:
