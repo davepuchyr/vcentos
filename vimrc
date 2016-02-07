@@ -62,3 +62,8 @@ endif
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
+
+" dmjp: turn off auto-comment
+au FileType * setl fo=cql
+au BufNewFile,BufRead *.gradle setf groovy
+

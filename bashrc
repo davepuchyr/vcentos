@@ -90,3 +90,27 @@ if ! shopt -q login_shell ; then # We're not a login shell
     unset -f pathmunge
 fi
 # vim:ts=4:sw=4
+
+# dmjp
+alias egrep='egrep --color'
+alias fgrep='fgrep --color'
+alias df='df -h'
+alias vi=vim
+alias ssh='ssh -X'
+alias ssg='ssh -X -p 10176'
+alias cvs='cvs -z3'
+#alias vmware=vmwarearts
+#alias unison='unison -rsync -maxthreads 5'
+alias unison='unison -rsync'
+alias tidy='tidy -utf8 --indent-spaces 3 --merge-divs 0 --merge-spans 0 -w 132 -ibcum --drop-proprietary-attributes 1 --fix-uri 1 --word-2000 1 --tidy-mark 0 --vertical-space 1'
+alias yum='yum --disableplugin=refresh-packagekit'
+alias mysqldump='mysqldump --skip-opt --add-drop-table --add-locks --create-options --quick --lock-tables --set-charset --disable-keys -c'
+alias vncviewer='vncviewer DotWhenNoCursor=1'
+alias mpg123='mpg123 --verbose --control --title --long-tag'
+
+# The next line updates PATH for the Google Cloud SDK.
+#source '/opt/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+#source '/opt/google-cloud-sdk/completion.bash.inc'
+
