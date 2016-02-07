@@ -3,6 +3,7 @@
 *crt
 *key
 *shadow*
+ld.so.cache
 named.conf.pre*
 pki
 
