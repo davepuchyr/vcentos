@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="ekiga">
+				<dir name="contacts">
+					<entry name="ldap_servers">
+						<local_schema short_desc="Freastalaí LDAP">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<dir name="user_interface">
+						<dir name="video_settings_window">
+							<entry name="size">
+								<local_schema short_desc="Méid na fuinneoige socruithe físe">
+									<longdesc>Méid na fuinneoige socruithe físe</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="audio_settings_window">
+							<entry name="size">
+								<local_schema short_desc="Méid na fuinneoige socruithe fuaime">
+									<longdesc>Méid na fuinneoige socruithe fuaime</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="nat">
+						<entry name="stun_server">
+							<local_schema short_desc="An Freastalaí STUN">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="personal_data">
+						<entry name="full_name">
+							<local_schema short_desc="Ainm iomlán">
+								<longdesc>Iontráil d&apos;ainm iomlán</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

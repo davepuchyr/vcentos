@@ -1,0 +1,10 @@
+[VPN Connection]
+name=libreswan
+service=org.freedesktop.NetworkManager.libreswan
+program=/usr/libexec/nm-libreswan-service
+
+[GNOME]
+auth-dialog=/usr/libexec/nm-libreswan-auth-dialog
+properties=/usr/lib64/NetworkManager/libnm-libreswan-properties
+supports-external-ui-mode=true
+supports-hints=true

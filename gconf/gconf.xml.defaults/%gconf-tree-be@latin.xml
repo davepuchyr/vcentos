@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ci pakazvać menu dla „Midnight Commander”">
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ci terminał dla Stała adčyniajecca ŭ chatnim katalohu">
+						<longdesc>Kali ŭklučana, tady terminał dla Stała budzie adčyniacca ŭ chatnim katalohu. Inakš jon budzie adčyniacca ŭ katalohu Stała. Zaŭvaž, što hety kluč ničoha nia robić, kali kataloh Stała źjaŭlajecca chatnim.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

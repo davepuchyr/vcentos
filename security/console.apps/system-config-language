@@ -1,0 +1,3 @@
+. config-util
+PROGRAM=/usr/share/system-config-language/system-config-language
+SESSION=true

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="ekiga">
+				<dir name="general">
+					<dir name="personal_data">
+						<entry name="full_name">
+							<local_schema short_desc="Nom complet">
+								<longdesc>Picatz vòstre nom complet</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

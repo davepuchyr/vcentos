@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ці трэба паказваць пункт меню для адкрыцця кіраўніка файлаў Midnight Commander">
+						<longdesc>Калі ўключана і калі кіраўнік файлаў для тэрміналаў &quot;Midnight Commander&quot; усталяваны ў сістэме, тады ў кантэкставым меню будзе паказаны пункт &quot;Адкрыць у Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ці трэба пры адкрыцці тэрмінала са стала адкрываць хатні каталог">
+						<longdesc>Калі ўключана, тады адкрыццё тэрмінала са стала будзе адкрываць хатні каталог. Іначай будзе адкрыты каталог самога стала. Гэты ключ ні на што не ўплывае, калі каталог стала супадае з хатнім каталогам.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>
