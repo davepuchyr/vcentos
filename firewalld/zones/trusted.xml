@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone target="ACCEPT">
+  <short>Trusted</short>
+  <description>All network connections are accepted.</description>
+  <source address="10.12.34.0/24"/>
+  <source address="10.13.13.0/24"/>
+  <service name="http"/>
+  <service name="https"/>
+  <service name="mysql"/>
+</zone>

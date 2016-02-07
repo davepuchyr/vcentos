@@ -2,6 +2,7 @@
 <zone>
   <short>Public</short>
   <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <interface name="enp0s3"/>
   <service name="dhcpv6-client"/>
   <service name="mdns"/>
   <service name="ssh"/>
