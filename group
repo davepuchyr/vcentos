@@ -8,7 +8,7 @@ disk:x:6:
 lp:x:7:
 mem:x:8:
 kmem:x:9:
-wheel:x:10:admin
+wheel:x:10:admin,dave
 cdrom:x:11:
 mail:x:12:postfix
 man:x:15:
@@ -21,7 +21,7 @@ ftp:x:50:
 lock:x:54:
 audio:x:63:
 nobody:x:99:
-users:x:100:
+users:x:100:dave
 utmp:x:22:
 utempter:x:35:
 ssh_keys:x:999:
@@ -50,7 +50,7 @@ sssd:x:987:
 rpcuser:x:29:
 nfsnobody:x:65534:
 pulse-access:x:986:
-pulse-rt:x:985:
+pulse-rt:x:985:dave
 pulse:x:171:
 gdm:x:42:
 gnome-initial-setup:x:984:
@@ -65,3 +65,4 @@ stapsys:x:157:
 stapdev:x:158:
 admin:x:1000:admin
 vboxsf:x:983:
+dave:x:500:

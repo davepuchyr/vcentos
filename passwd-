@@ -39,3 +39,5 @@ postfix:x:89:89::/var/spool/postfix:/sbin/nologin
 sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
 tcpdump:x:72:72::/:/sbin/nologin
 admin:x:1000:1000:admin:/home/admin:/bin/bash
+vboxadd:x:988:1::/var/run/vboxadd:/bin/false
+dave:x:500:500:Dave Puchyr:/home/dave:/bin/bash
