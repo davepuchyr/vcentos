@@ -1,0 +1,46 @@
+%_kde4_prefix %_prefix
+%_kde4_sysconfdir %_sysconfdir
+%_kde4_libdir %_libdir
+%_kde4_libexecdir %_libexecdir/kde4
+%_kde4_datadir %_datadir
+%_kde4_sharedir %_datadir
+%_kde4_iconsdir %_kde4_sharedir/icons
+%_kde4_configdir %_kde4_sharedir/config
+%_kde4_appsdir %_kde4_sharedir/kde4/apps
+%_kde4_docdir /usr/share/doc
+%_kde4_bindir %_kde4_prefix/bin
+%_kde4_sbindir %_kde4_prefix/sbin
+%_kde4_includedir %_kde4_prefix/include/kde4
+%_kde4_buildtype release
+%_kde4_macros_api 2
+
+%_kde4_version %((kde4-config --kde-version 2>/dev/null || echo 4.3.98) | cut -d' ' -f1 )
+#_kde4_version %((kde4-config --version 2>/dev/null || echo "KDE: 4.3.98") | grep '^KDE' | sed -e 's/KDE[^:]*:[ ]*//g' | cut -d' ' -f1)
+
+# api = 2
+# initial try, including only items that vary from defaults
+#
+
+%_kde4_build_tests -DKDE4_BUILD_TESTS:BOOL=OFF
+
+%cmake_kde4 \
+  QTDIR="%{_qt4_prefix}" ; export QTDIR ; \
+  PATH="%{_qt4_bindir}:$PATH" ; export PATH ; \
+  CFLAGS="${CFLAGS:-%optflags}" ; export CFLAGS ; \
+  CXXFLAGS="${CXXFLAGS:-%optflags}" ; export CXXFLAGS ; \
+  FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
+  %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
+  %{__cmake} \\\
+    -DBUILD_SHARED_LIBS:BOOL=ON \\\
+    -DCMAKE_BUILD_TYPE=%{_kde4_buildtype} \\\
+    -DCMAKE_INSTALL_PREFIX:PATH=%{_kde4_prefix} \\\
+    -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \\\
+    -DDATA_INSTALL_DIR:PATH=%{_kde4_appsdir} \\\
+    -DINCLUDE_INSTALL_DIR:PATH=%{_kde4_includedir} \\\
+    -DLIB_INSTALL_DIR:PATH=%{_kde4_libdir} \\\
+    %{?_kde4_build_tests} \\\
+%if "%{?_lib}" == "lib64" \
+     %{?_cmake_lib_suffix64} \\\
+%endif \
+    -DLIBEXEC_INSTALL_DIR:PATH=%{_kde4_libexecdir} \\\
+    -DSYSCONF_INSTALL_DIR:PATH=%{_kde4_sysconfdir}
