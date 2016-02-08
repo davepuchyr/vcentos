@@ -1497,3 +1497,4 @@
 1454939652 perl-Thread-Queue 3.02 2.el7 noarch
 1454939652 redhat-rpm-config 9.1.0 68.el7.centos noarch
 1454939652 rpm-build 4.11.3 17.el7 x86_64
+1454941218 rpmrebuild 2.11 2.1 noarch
