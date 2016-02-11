@@ -1498,3 +1498,7 @@
 1454939652 redhat-rpm-config 9.1.0 68.el7.centos noarch
 1454939652 rpm-build 4.11.3 17.el7 x86_64
 1454941218 rpmrebuild 2.11 2.1 noarch
+1454950275 iptstate 2.2.5 4.el7 x86_64
+1454950275 telnet 0.17 59.el7 x86_64
+1455020554 doxygen 1.8.5 3.el7 x86_64
+1455020554 doxygen-doxywizard 1.8.5 3.el7 x86_64
