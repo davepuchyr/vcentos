@@ -19,7 +19,7 @@ DEFAULTS_FILE="/etc/default/google-chrome"
 
 # sources.list setting for google-chrome updates.
 REPOCONFIG="http://dl.google.com/linux/chrome/rpm/stable"
-SSLREPOCONFIG="https://dl.google.com/linux/chrome/rpm/stable"
+REPOCONFIGREGEX=""
 
 # Install the repository signing key (see also:
 # https://www.google.com/linuxrepositories/)
